@@ -1,0 +1,19 @@
+> tools/repro_b2.py(1)<module>()
+-> """Reproduce bug B2: adding an existing item should add to its quantity."""
+(Pdb) Breakpoint 1 at buggy/cart_buggy.py:16
+(Pdb) > buggy/cart_buggy.py(16)add_item()
+-> if name in self.items:
+(Pdb) ('Pen', 2.5, 2)
+(Pdb) {}
+(Pdb) > buggy/cart_buggy.py(16)add_item()
+-> if name in self.items:
+(Pdb) ('Pen', 2.5, 3)
+(Pdb) {'Pen': [2.5, 2]}
+(Pdb) True
+(Pdb) > buggy/cart_buggy.py(17)add_item()
+-> self.items[name] = [price, quantity]           # B2: overwrites instead of adding
+(Pdb) --Return--
+> buggy/cart_buggy.py(17)add_item()->None
+-> self.items[name] = [price, quantity]           # B2: overwrites instead of adding
+(Pdb) {'Pen': [2.5, 3]}
+(Pdb) 

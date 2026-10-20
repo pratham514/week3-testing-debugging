@@ -1,0 +1,44 @@
+test_add_single_item (test_cart.AddItemTests.test_add_single_item) ... ok
+test_add_with_quantity (test_cart.AddItemTests.test_add_with_quantity) ... ok
+test_adding_existing_item_increases_quantity (test_cart.AddItemTests.test_adding_existing_item_increases_quantity) ... ok
+test_negative_price_rejected (test_cart.AddItemTests.test_negative_price_rejected) ... ok
+test_negative_quantity_rejected (test_cart.AddItemTests.test_negative_quantity_rejected) ... ok
+test_non_integer_quantity_rejected (test_cart.AddItemTests.test_non_integer_quantity_rejected) ... ok
+test_price_zero_rejected (test_cart.AddItemTests.test_price_zero_rejected) ... ok
+test_zero_quantity_rejected (test_cart.AddItemTests.test_zero_quantity_rejected) ... ok
+test_coupon_code_ignores_surrounding_spaces (test_cart.CouponTests.test_coupon_code_ignores_surrounding_spaces) ... ok
+test_coupon_code_is_case_insensitive (test_cart.CouponTests.test_coupon_code_is_case_insensitive) ... ok
+test_new_coupon_replaces_old_one (test_cart.CouponTests.test_new_coupon_replaces_old_one) ... ok
+test_no_coupon_means_no_discount (test_cart.CouponTests.test_no_coupon_means_no_discount) ... ok
+test_save10_gives_ten_percent (test_cart.CouponTests.test_save10_gives_ten_percent) ... ok
+test_save20_accepted_at_exactly_100 (test_cart.CouponTests.test_save20_accepted_at_exactly_100) ... ok
+test_save20_gives_twenty_percent (test_cart.CouponTests.test_save20_gives_twenty_percent) ... ok
+test_save20_rejected_below_100 (test_cart.CouponTests.test_save20_rejected_below_100) ... ok
+test_save20_stops_applying_if_subtotal_drops_below_100 (test_cart.CouponTests.test_save20_stops_applying_if_subtotal_drops_below_100) ... ok
+test_unknown_coupon_raises (test_cart.CouponTests.test_unknown_coupon_raises) ... ok
+test_carts_do_not_share_coupons (test_cart.IsolationTests.test_carts_do_not_share_coupons) ... ok
+test_carts_do_not_share_items (test_cart.IsolationTests.test_carts_do_not_share_items) ... ok
+test_custom_tax_rate (test_cart.MoneyTests.test_custom_tax_rate) ... ok
+test_empty_cart_totals_are_zero (test_cart.MoneyTests.test_empty_cart_totals_are_zero) ... ok
+test_subtotal_is_rounded (test_cart.MoneyTests.test_subtotal_is_rounded) ... ok
+test_subtotal_uses_quantity (test_cart.MoneyTests.test_subtotal_uses_quantity) ... ok
+test_tax_is_charged_after_discount (test_cart.MoneyTests.test_tax_is_charged_after_discount) ... ok
+test_tax_without_coupon (test_cart.MoneyTests.test_tax_without_coupon) ... ok
+test_total_is_rounded_to_two_decimals (test_cart.MoneyTests.test_total_is_rounded_to_two_decimals) ... ok
+test_receipt_contains_lines_and_totals (test_cart.ReceiptTests.test_receipt_contains_lines_and_totals) ... ok
+test_remove_missing_item_raises (test_cart.RemoveItemTests.test_remove_missing_item_raises) ... ok
+test_remove_part_of_quantity (test_cart.RemoveItemTests.test_remove_part_of_quantity) ... ok
+test_remove_whole_item (test_cart.RemoveItemTests.test_remove_whole_item) ... ok
+test_remove_zero_quantity_rejected (test_cart.RemoveItemTests.test_remove_zero_quantity_rejected) ... ok
+test_removing_exact_quantity_deletes_item (test_cart.RemoveItemTests.test_removing_exact_quantity_deletes_item) ... ok
+test_removing_too_many_raises (test_cart.RemoveItemTests.test_removing_too_many_raises) ... ok
+test_average_price_is_per_unit (test_cart.StatisticsTests.test_average_price_is_per_unit) ... ok
+test_average_price_of_empty_cart_is_zero (test_cart.StatisticsTests.test_average_price_of_empty_cart_is_zero) ... ok
+test_most_expensive_item_of_empty_cart_is_none (test_cart.StatisticsTests.test_most_expensive_item_of_empty_cart_is_none) ... ok
+test_most_expensive_item_uses_price (test_cart.StatisticsTests.test_most_expensive_item_uses_price) ... ok
+test_total_quantity (test_cart.StatisticsTests.test_total_quantity) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 0.001s
+
+OK

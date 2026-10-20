@@ -1,0 +1,4 @@
+  File "buggy/cart_syntax_error.py", line 14
+    def add_item(self, name, price, quantity=1)      # <-- B0: missing colon
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: expected ':'

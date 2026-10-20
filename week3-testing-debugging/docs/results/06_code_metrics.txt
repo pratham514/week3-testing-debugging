@@ -1,0 +1,8 @@
+Metric                              BEFORE (buggy/cart_buggy.py)    AFTER  (src/cart.py)
+Code lines (no blanks/comments)     73                              137
+Functions/methods                   14                              19
+Docstring coverage                  0%                              95%
+Functions with return type hints    0%                              100%
+Max cyclomatic complexity           4                               5
+Average cyclomatic complexity       2.1                             1.9
+Magic numbers inside functions      5                               1

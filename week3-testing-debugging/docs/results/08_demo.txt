@@ -1,0 +1,11 @@
+Subtotal: 100
+Discount: 10.0
+Tax:      7.2
+Total:    97.2
+
+Book          2 x    50.00 =    100.00
+--------------------------------------
+Subtotal:                       100.00
+Discount:                       -10.00
+Tax:                              7.20
+Total:                           97.20

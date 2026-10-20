@@ -1,0 +1,13 @@
+> tools/repro_b1.py(1)<module>()
+-> """Reproduce bug B1: two separate carts should not share their items."""
+(Pdb) Breakpoint 1 at buggy/cart_buggy.py:8
+(Pdb) > buggy/cart_buggy.py(8)__init__()
+-> self.tax_rate = tax_rate
+(Pdb) 140131330107008
+(Pdb) {}
+(Pdb) > buggy/cart_buggy.py(8)__init__()
+-> self.tax_rate = tax_rate
+(Pdb) 140131330107008
+(Pdb) {'Pen': [2.5, 1]}
+(Pdb) (0.08, {'Pen': [2.5, 1]})
+(Pdb) 

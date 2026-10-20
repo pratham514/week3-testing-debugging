@@ -1,0 +1,8 @@
+receipt() with 2000 items, 50 calls (best of 5)
+  before (buggy): 0.089 s
+  after  (fixed): 0.072 s
+  speed-up: 1.2x
+total() with 2000 items, 50 calls (best of 5)
+  before (buggy): 0.009 s
+  after  (fixed): 0.004 s
+  speed-up: 2.3x

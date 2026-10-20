@@ -1,0 +1,20 @@
+Baseline (fixed code): all tests pass
+
+Bug  Result    Failing tests  Description
+B0   DETECTED  1              syntax error: missing colon after add_item signature
+B1   DETECTED  27             mutable default argument shares items between carts
+B2   DETECTED  1              adding an existing item overwrites quantity
+B3   DETECTED  1              price 0 accepted (< instead of <=)
+B4   DETECTED  4              quantity never validated
+B5   DETECTED  2              remove_item leaves quantity 0 and allows over-removal
+B6   DETECTED  1              subtotal not rounded
+B7   DETECTED  1              SAVE20 boundary: > 100 instead of >= 100
+B8   DETECTED  1              unknown coupon silently ignored
+B9   DETECTED  1              coupon code is case-sensitive
+B10  DETECTED  2              tax charged before discount
+B11  DETECTED  1              average divides by distinct items, not units
+B12  DETECTED  1              average crashes on empty cart
+B13  DETECTED  1              most_expensive_item compares quantity
+B14  DETECTED  1              coupon minimum not re-checked after items change
+
+Detected 15 of 15 bugs = 100% (target: at least 80%)

@@ -1,0 +1,23 @@
+22 of 39 tests fail against the buggy code when run in isolation:
+  - AddItemTests.test_adding_existing_item_increases_quantity
+  - AddItemTests.test_negative_quantity_rejected
+  - AddItemTests.test_non_integer_quantity_rejected
+  - AddItemTests.test_price_zero_rejected
+  - AddItemTests.test_zero_quantity_rejected
+  - CouponTests.test_coupon_code_ignores_surrounding_spaces
+  - CouponTests.test_coupon_code_is_case_insensitive
+  - CouponTests.test_save20_accepted_at_exactly_100
+  - CouponTests.test_save20_rejected_below_100
+  - CouponTests.test_save20_stops_applying_if_subtotal_drops_below_100
+  - CouponTests.test_unknown_coupon_raises
+  - IsolationTests.test_carts_do_not_share_items
+  - MoneyTests.test_subtotal_is_rounded
+  - MoneyTests.test_tax_is_charged_after_discount
+  - MoneyTests.test_total_is_rounded_to_two_decimals
+  - ReceiptTests.test_receipt_contains_lines_and_totals
+  - RemoveItemTests.test_remove_zero_quantity_rejected
+  - RemoveItemTests.test_removing_exact_quantity_deletes_item
+  - RemoveItemTests.test_removing_too_many_raises
+  - StatisticsTests.test_average_price_is_per_unit
+  - StatisticsTests.test_average_price_of_empty_cart_is_zero
+  - StatisticsTests.test_most_expensive_item_uses_price

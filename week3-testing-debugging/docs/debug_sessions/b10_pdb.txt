@@ -1,0 +1,12 @@
+> tools/repro_b10.py(1)<module>()
+-> """Reproduce bug B10: tax must be charged on the price AFTER the discount."""
+(Pdb) Breakpoint 1 at buggy/cart_buggy.py:69
+(Pdb) > buggy/cart_buggy.py(69)tax()
+-> return self.subtotal() * self.tax_rate             # B10: tax on price BEFORE discount
+(Pdb) 100
+(Pdb) 10.0
+(Pdb) 90.0
+(Pdb) 0.08
+(Pdb) 8.0
+(Pdb) 7.2
+(Pdb) 

@@ -1,0 +1,4 @@
+Tests run: 39, failures: 0
+File: src/cart.py
+Executable lines: 107   Covered: 107   Missed: 0
+Line coverage: 100.0%
